@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medicine Table Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Medicine Table Maker</h1>
+      <p>Create, organize, and export your medicine list.</p>
+    </header>
+
+    <section class="card">
+      <h2>Add Medicine</h2>
+      <form id="medicine-form" class="grid">
+        <label>
+          Medicine Name
+          <input id="name" type="text" required placeholder="e.g., Paracetamol" />
+        </label>
+        <label>
+          Dosage
+          <input id="dosage" type="text" required placeholder="e.g., 500 mg" />
+        </label>
+        <label>
+          Frequency
+          <input id="frequency" type="text" required placeholder="e.g., 2 times/day" />
+        </label>
+        <label>
+          Time
+          <input id="time" type="text" placeholder="e.g., Morning" />
+        </label>
+        <label>
+          Start Date
+          <input id="start-date" type="date" />
+        </label>
+        <label>
+          Notes
+          <input id="notes" type="text" placeholder="Optional notes" />
+        </label>
+        <button type="submit" id="submit-btn">Add to Table</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search medicine..." />
+        <div class="actions">
+          <button id="export-btn" type="button">Export CSV</button>
+          <button id="clear-btn" type="button" class="danger">Clear All</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="medicine-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Dosage</th>
+              <th>Frequency</th>
+              <th>Time</th>
+              <th>Start Date</th>
+              <th>Notes</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+      <p id="empty-state">No medicines added yet.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
