@@ -1,0 +1,9 @@
+{
+  "name": "medicine-table-maker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local static server for Medicine Table Maker",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

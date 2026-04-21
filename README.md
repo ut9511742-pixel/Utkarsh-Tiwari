@@ -9,11 +9,14 @@ A simple static website to create and manage a medicine schedule table.
 - Export the medicine table to CSV.
 - Data persistence with browser `localStorage`.
 
-## Run locally
-Because this is a static site, you can open `index.html` directly in your browser.
-
-Optional (with Python):
+## Run locally (Node.js server)
 ```bash
-python3 -m http.server 8000
+npm start
 ```
-Then open `http://localhost:8000`.
+
+Then open `http://127.0.0.1:8000`.
+
+### Custom host/port
+```bash
+HOST=0.0.0.0 PORT=3000 npm start
+```
