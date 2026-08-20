@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="MediPortfolio helps healthcare companies showcase services, specialists, patient programs, and customer scale with a modern medical services website."
+    />
+    <title>MediPortfolio | Medical Services & Company Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="MediPortfolio home">
+          <span class="brand-mark">+</span>
+          <span>MediPortfolio</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#services">Services</a>
+          <a href="#customers">Customers</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Healthcare services at enterprise scale</p>
+          <h1>Build trust with thousands of medical customers through one clear digital portfolio.</h1>
+          <p class="hero-copy">
+            Present clinics, specialist teams, diagnostics, emergency support, patient programs, and company achievements in a polished platform made for growing healthcare organizations.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Request a demo</a>
+            <a class="button secondary" href="#portfolio">View portfolio</a>
+          </div>
+          <div class="trust-row" aria-label="Company metrics">
+            <div><strong>75k+</strong><span>Patients served</span></div>
+            <div><strong>120+</strong><span>Care partners</span></div>
+            <div><strong>24/7</strong><span>Support desk</span></div>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Care operations dashboard preview">
+          <div class="card-header">
+            <span>Live care network</span>
+            <strong>98.7%</strong>
+          </div>
+          <div class="pulse-grid">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <ul class="status-list">
+            <li><span class="dot green"></span>Appointment capacity available</li>
+            <li><span class="dot blue"></span>Diagnostics reports delivered</li>
+            <li><span class="dot orange"></span>Follow-up queue prioritized</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Medical services</p>
+          <h2>Everything patients need, organized for high-volume care.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><h3>Primary care</h3><p>General consultation, family medicine, chronic care, and preventive screenings.</p></article>
+          <article class="service-card"><h3>Specialist clinics</h3><p>Cardiology, orthopedics, dermatology, pediatrics, and women’s health programs.</p></article>
+          <article class="service-card"><h3>Diagnostics</h3><p>Lab tests, imaging, reports, health packages, and digital result tracking.</p></article>
+          <article class="service-card"><h3>Emergency support</h3><p>Priority triage, ambulance coordination, urgent care, and 24/7 helpdesk routing.</p></article>
+        </div>
+      </section>
+
+      <section class="customer-band" id="customers">
+        <div>
+          <p class="eyebrow">Customer scale</p>
+          <h2>Designed for large customer networks.</h2>
+          <p>Segment enterprise accounts, insurance partners, walk-in patients, and community programs while keeping outcomes visible to leadership.</p>
+        </div>
+        <div class="customer-stats">
+          <div><strong>42</strong><span>Locations managed</span></div>
+          <div><strong>310k</strong><span>Annual appointments</span></div>
+          <div><strong>4.8/5</strong><span>Patient satisfaction</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio">
+        <div class="section-heading">
+          <p class="eyebrow">Company portfolio</p>
+          <h2>Show achievements that matter to patients and partners.</h2>
+        </div>
+        <div class="portfolio-grid">
+          <article><span>01</span><h3>Hospital partnerships</h3><p>Highlight accredited hospitals, care centers, and referral networks.</p></article>
+          <article><span>02</span><h3>Doctor profiles</h3><p>Feature specialist experience, departments, languages, and appointment availability.</p></article>
+          <article><span>03</span><h3>Impact reports</h3><p>Share case studies, outreach programs, patient success metrics, and awards.</p></article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="eyebrow">Start building</p>
+          <h2>Ready to launch a healthcare portfolio for your company?</h2>
+          <p>Use this starter to create a custom medical services platform with service catalogs, customer proof, and inquiry workflows.</p>
+        </div>
+        <form class="contact-form">
+          <label>Company name<input type="text" name="company" placeholder="Your healthcare company" /></label>
+          <label>Email<input type="email" name="email" placeholder="team@example.com" /></label>
+          <label>Message<textarea name="message" rows="4" placeholder="Tell us about your services and customer network"></textarea></label>
+          <button class="button primary" type="submit">Send inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 MediPortfolio. Built for modern healthcare service companies.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
